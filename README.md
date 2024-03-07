@@ -1,11 +1,7 @@
-[![GPL 3 License](https://img.shields.io/github/license/yuri-becker/seafile-mount?style=for-the-badge&logo=gnu&logoColor=white
-)](https://github.com/yuri-becker/seafile-mount/blob/main/LICENSE.,d)
-[![](https://img.shields.io/docker/pulls/yuribecker/seafile-mount?style=for-the-badge&logo=docker&logoColor=white
+[![GPL 3 License](https://img.shields.io/github/license/yuri-becker/seafile-mount?style=for-the-badge&logo=gnu&logoColor=white&color=%23A42E2B )](https://github.com/yuri-becker/seafile-mount/blob/main/LICENSE.md)
+[![Docker](https://img.shields.io/docker/pulls/yuribecker/seafile-mount?style=for-the-badge&logo=docker&logoColor=white&color=%232496ED
 )](https://hub.docker.com/r/yuribecker/seafile-mount)
-[![](https://img.shields.io/docker/v/yuribecker/seafile-mount?style=for-the-badge&logo=docker&label=Version%20(arm64)&arch=arm64&logoColor=white
-)](https://hub.docker.com/r/yuribecker/seafile-mount)
-[![](https://img.shields.io/docker/v/yuribecker/seafile-mount?style=for-the-badge&logo=docker&label=Version%20(amd64)&arch=amd64&logoColor=white
-)](https://hub.docker.com/r/yuribecker/seafile-mount)
+[![GitHub](https://img.shields.io/github/stars/yuri-becker/seafile-mount?style=for-the-badge&logo=github&logoColor=white&color=%23181717)](https://github.com/yuri-becker/seafile-mount)
 
 <br />
 <div align="center">
