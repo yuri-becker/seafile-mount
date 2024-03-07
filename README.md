@@ -15,11 +15,11 @@
 
 ## About
 
-This docker image mounts a [Seafile](https://www.seafile.com/en/home/) user's library using the [seadrive](https://help.seafile.com/drive_client/drive_client_for_linux/) client, which streams a filesystem instead of syncing the while instance.
+This docker image mounts a [Seafile](https://www.seafile.com/en/home/) user's library using the [seadrive](https://help.seafile.com/drive_client/drive_client_for_linux/) client, which streams a filesystem instead of syncing.
 
 Using Seadrive containerized has several advantages (probably – in my case, it was just an infrastructural requirement).
 
-Image supports, x86_64 and arm64 because that's what Seadrive is available for. Albeit, the arm64 Debian repository for Seadrive didn't receive the latest patches, but still works.
+Image supports x86_64 and arm64 because that's what Seadrive is available for. Albeit, the arm64 Debian repository for Seadrive didn't receive the latest patches, but still works.
 
 
 ## Drawbacks
