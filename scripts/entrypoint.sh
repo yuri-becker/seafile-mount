@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
 ./scripts/write-config.sh
-rm -rf /seafile/files
-mkdir /seafile/files
+mkdir -p /seafile/files
 seadrive -c seadrive.conf -f -o allow_root -d /seafile/data /seafile/files
