@@ -45,15 +45,16 @@ docker run --privileged \
 
 ## Environment Variables
 
-| Name                               | Description                                                          | Default              |
-|------------------------------------|----------------------------------------------------------------------|----------------------|
-| SEAFILE_MOUNT_SERVER               | URL of your server (including https://)                              | *required*           |
-| SEAFILE_MOUNT_USERNAME             | Username (email) of the user                                         | *required*           |
-| SEAFILE_MOUNT_TOKEN                | Token for the user, see [Acquiring a Token](#acquiring-a-token)      | required             |
-| SEAFILE_MOUNT_IS_PRO               | Is server Professional Edition? (`true`/`false`)                     | false                |
-| SEAFILE_MOUNT_CLIENT_NAME          | Name for how this client should show up in Seafile's admin panel | Seafile Docker Mount |
-| SEAFILE_MOUNT_CACHE_SIZE_LIMIT     | Size limit for the cache                                             | 10GB                 |
-| SEAFILE_MOUNT_CLEAN_CACHE_INTERVAL | Interval for cache cleaning in minutes                               | 10                   |
+| Name                               | Description                                                                                                                                                       | Default              |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| SEAFILE_MOUNT_SERVER               | URL of your server (including https://)                                                                                                                           | *required*           |
+| SEAFILE_MOUNT_USERNAME             | Username (email) of the user                                                                                                                                      | *required*           |
+| SEAFILE_MOUNT_TOKEN                | Token for the user, see [Acquiring a Token](#acquiring-a-token)                                                                                                   | required             |
+| SEAFILE_MOUNT_IS_PRO               | Is server Professional Edition? (`true`/`false`)                                                                                                                  | false                |
+| SEAFILE_MOUNT_CLIENT_NAME          | Name for how this client should show up in Seafile's admin panel                                                                                                  | Seafile Docker Mount |
+| SEAFILE_MOUNT_CACHE_SIZE_LIMIT     | Size limit for the cache                                                                                                                                          | 10GB                 |
+| SEAFILE_MOUNT_CLEAN_CACHE_INTERVAL | Interval for cache cleaning in minutes                                                                                                                            | 10                   |
+| SEAFILE_MOUNT_ALLOW_OTHER          | Set to yes to mount with `allow_other` instead of `allow_root` ([see FUSE mount options](https://www.systutorials.com/docs/linux/man/8-mount.fuse/)) (`yes`/`no`) | *optional*           |
 
 See
 the [official documentation](https://help.seafile.com/drive_client/drive_client_for_linux/#running-seadrive-without-gui)
