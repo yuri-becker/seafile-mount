@@ -1,8 +1,6 @@
 name: Build and Publish
 on:
   push:
-    branches: 
-      - "main"
   schedule:
     - cron: 0 0 * * 0
 jobs:
@@ -29,7 +27,7 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ steps.meta.outputs.tags }}, yuribecker/seafile-mount:latest
+        tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
   update-description:
     runs-on: ubuntu-latest
