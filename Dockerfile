@@ -8,7 +8,8 @@ RUN apt-get update &&\
         ca-certificates\
         wget\
         lsb-release\
-        curl
+        curl\
+        fuse
 
 RUN wget https://linux-clients.seafile.com/seafile.asc -O /usr/share/keyrings/seafile-keyring.asc
 RUN echo "deb [arch=amd64 signed-by=/usr/share/keyrings/seafile-keyring.asc] https://linux-clients.seafile.com/seadrive-deb/$(lsb_release -cs)/ stable main" | tee -a /etc/apt/sources.list.d/seadrive.list > /dev/null
