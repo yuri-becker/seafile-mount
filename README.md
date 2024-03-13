@@ -35,12 +35,37 @@ Your **host** system needs to have [Fuse](https://github.com/libfuse/libfuse) in
 
 ### Example
 
+#### Command line
+
 ```sh
 docker run --privileged \
 --env-file ./.env \
 --mount type=bind,source=/home/yuri/seafile-mount,target=/seafile,bind-propagation=rshared \
 -it seafile-mount
 ```
+
+#### docker-compose.yml
+
+```yaml
+version: "3"
+services:
+  seadrive:
+    container_name: seadrive
+    image: yuribecker/seafile-mount:latest
+    environment:
+      - SEAFILE_MOUNT_SERVER=https://seadrive.example.org
+      - SEAFILE_MOUNT_USERNAME=username@example.org
+      - SEAFILE_MOUNT_TOKEN=TOKEN
+    privileged: true
+    volumes:
+      - type: bind
+        bind:
+          propagation: rshared
+        source: /home/yuri/seafile-mount
+        target: /seafile
+
+```
+
 
 
 ## Environment Variables
